@@ -1,0 +1,80 @@
+/* @import (pour importer d'autres feuilles css) */
+@import url(./utils.css);
+@import url(./incs/navbar.css);
+
+/* GENERAL */
+*{
+    box-sizing: border-box;
+}
+
+html,body{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    color:var(--gris);
+}
+
+.container_principal{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: var(--transparent);
+}
+h1{
+    text-align: center;
+}
+
+p{
+    margin:0;
+}
+
+button{
+    padding: 10px 5px 10px 5px;
+} 
+
+/* ---------------- ACCUEIL -------------------------- */
+.content{
+    flex: 9;
+    background-color: var(--grisClair);
+}
+
+.containerRetour{
+    top: 1em;
+    right: 1em;
+}
+.container_choice, .div_connexion{
+    width: 50%;
+    height: 50%;
+    background-color: white;
+    border-radius: 20px;
+}
+
+
+.btn_students, .btn_teacher{
+    font-size: 2em;
+    padding: 20px 10px 20px 10px;
+    background-color: white;
+    color: black;
+    border: none;
+    box-shadow: none;
+    flex: 2;
+}
+
+
+/* FOOTER*/
+
+footer{
+    flex: 1;
+    background-color: white;
+}
+
+
+#btn_validation{
+    background-color: #87CEFA;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    box-shadow: none;
+    font-size: 1.2em;
+}

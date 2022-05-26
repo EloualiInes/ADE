@@ -1,0 +1,9 @@
+.navbar{
+    border-bottom: grey 1px solid;
+    flex: 2;
+}
+
+.div_menu > p{
+    margin-right: 20px;
+}
+

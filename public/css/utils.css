@@ -1,0 +1,114 @@
+/* Margin */
+.marg-0{
+    margin:0px;
+}
+.marg-5{
+    margin:5px;
+}
+.marg-10{
+    margin:10px;
+}
+.marg-15{
+    margin:15px;
+}
+
+.marg-20{
+    margin:20px;
+}
+
+/* Flex */
+
+ .flex{
+    display: flex;
+}
+
+.center_row_column{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+} 
+
+.center_column_row{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.center_column{
+    flex-direction: column;
+    justify-content: center;
+}
+
+.space_between_row{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.space_around_row{
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.space_between_column{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flexStart_row{
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.flexStart_column{
+    flex-direction:column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.flexEnd_row{
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Position */
+.relative{
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
+}
+
+/* Font_size */
+
+.font_1{
+    font-size: 1em;
+}
+
+.font_1_3{
+    font-size: 1.3em;
+}
+
+.font_1_5{
+    font-size: 1.5em;
+}
+
+.font_2{
+    font-size: 2em;
+}
+
+.font_3{
+    font-size: 3em;
+}
+
+/* Color */
+:root{
+    --transparent: transparent;
+    --gris: #383838;
+    --grisClair:#EFEFEF;
+}
