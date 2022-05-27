@@ -21,6 +21,12 @@ html,body{
     justify-content: flex-start;
     background-color: var(--transparent);
 }
+
+.content{
+    flex: 9;
+    background-color: var(--grisClair);
+}
+
 h1{
     text-align: center;
 }
@@ -29,29 +35,24 @@ p{
     margin:0;
 }
 
-button{
-    padding: 10px 5px 10px 5px;
-} 
-
-/* ---------------- ACCUEIL -------------------------- */
-.content{
-    flex: 9;
-    background-color: var(--grisClair);
-}
-
-.containerRetour{
-    top: 1em;
-    right: 1em;
-}
-.container_choice, .div_connexion{
-    width: 50%;
-    height: 50%;
+/* ---------------- Pages with form -------------------------- */
+.container_content{
+    /* width: 50%;
+    height: 50%; */
+    flex: 1;
+    margin: 0 35% 0 35%;
     background-color: white;
     border-radius: 20px;
 }
 
 
-.btn_students, .btn_teacher{
+
+.div_btns{
+    flex-wrap: wrap;
+}
+
+.div_btns > *{flex: 1 1 160px;}
+.btn_chx{
     font-size: 2em;
     padding: 20px 10px 20px 10px;
     background-color: white;
@@ -61,6 +62,14 @@ button{
     flex: 2;
 }
 
+/* ---------------- ACCUEIL -------------------------- */
+
+/* ---------------- Etablissement -------------------------- */
+
+.containerRetour{
+    top: 1em;
+    right: 1em;
+}
 
 /* FOOTER*/
 

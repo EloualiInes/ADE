@@ -16,4 +16,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [MainController::class,"index"]);
 
-Route::post("/authentification", [MainController::class,'authentification']);
+Route::post("/etablissement", [MainController::class,'chxEtablissement']);
+
+// Faire sûrement un controlleur emploiDuTemps(resource ? + bloqué certaines routes du coup)
+Route::post("liste", function(){
+    return view('listeemploiDuTemps');
+});

@@ -10,7 +10,7 @@ class MainController extends Controller
         return view('accueil');
     }
     
-    public function authentification(){
-        return view('authentification');
+    public function chxEtablissement(){
+        return view('etablissement');
     }
 }
