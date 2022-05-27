@@ -16,9 +16,33 @@
     margin:20px;
 }
 
-/* Flex */
+/* Padding */
+.pad-0{
+    margin:0px;
+}
+.pad-5{
+    margin:5px;
+}
+.pad-10{
+    margin:10px;
+}
+.pad-15{
+    margin:15px;
+}
 
- .flex{
+.pad-20{
+    margin:20px;
+}
+/* Display */
+.inline{
+    display: inline;
+}
+
+.block{
+    display:block;
+}
+
+.flex{
     display: flex;
 }
 
@@ -82,6 +106,10 @@
 
 .absolute{
     position: absolute;
+}
+
+.fixed{
+    position: fixed;
 }
 
 /* Font_size */
