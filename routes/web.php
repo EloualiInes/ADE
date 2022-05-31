@@ -16,10 +16,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [MainController::class,"index"]);
-
-Route::post("/etablissement", [MainController::class,'chxEtablissement']);
-
+Route::post('/', [MainController::class,"index"]);
+Route::get("/etablissement", [MainController::class,'etablissement']);
 // Faire sûrement un controlleur emploiDuTemps(resource ? + bloqué certaines routes du coup)
-Route::post("liste", function(){
-    return view('listeemploiDuTemps');
-});
+Route::post("/liste",[MainController::class,'liste']);
+Route::get("/liste",[MainController::class,'liste']);
+// Route::post('/liste', function() {
+//    return view('listeEmploiDuTemps',compact('listeFiliere'));
+// })->name('listeEmploiDuTemps');
+
+Route::post("/traitement", [MainController::class,'chxPages']);

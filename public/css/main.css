@@ -2,6 +2,9 @@
 @import url(./utils.css);
 @import url(./incs/navbar.css);
 
+
+
+
 /* GENERAL */
 *{
     box-sizing: border-box;
@@ -25,10 +28,12 @@ html,body{
 .content{
     flex: 9;
     background-color: var(--grisClair);
+    flex-wrap: wrap;
 }
 
 h1{
     text-align: center;
+    font-size: 2em;
 }
 
 p{
@@ -37,21 +42,42 @@ p{
 
 /* ---------------- Pages with form -------------------------- */
 .container_content{
-    /* width: 50%;
-    height: 50%; */
-    flex: 1;
-    margin: 0 35% 0 35%;
+    width: 75%;
+    height: 75%;
+    /* flex: 1; */
+    /* margin: 5% 10% 5% 10%; */
     background-color: white;
     border-radius: 20px;
+    border: 1px solid var(--gris);
+    box-shadow: 5px 3px 3px var(--gris);
+    flex-wrap: wrap;
+    align-items: stretch;
 }
 
+ .container_content > h1{
+    margin-top: 0;
+    /* text-decoration: underline; */
+}
+
+.container_content > *{
+    flex: 0 0 auto;
+}
 
 
 .div_btns{
     flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.img{
+    width: var(--big);
+    height: var(--big);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
-.div_btns > *{flex: 1 1 160px;}
 .btn_chx{
     font-size: 2em;
     padding: 20px 10px 20px 10px;
@@ -63,12 +89,34 @@ p{
 }
 
 /* ---------------- ACCUEIL -------------------------- */
+#searchEmploi{
+    width: 30%;
+    height: 3em;
+    margin-bottom: 2em;
+    border-radius: 20px;
+    padding-left: 1.5em;
+}
+
+.imgStudent{
+    background-image: url('../pictures/eleve.png');
+    
+}
+
+.imgProf{
+    background-image: url('../pictures/prof.png');
+}
+
 
 /* ---------------- Etablissement -------------------------- */
 
 .containerRetour{
     top: 1em;
     right: 1em;
+}
+
+button .nomEtablissement{
+    font-family: "Brush";
+    font-size: 2.8em
 }
 
 /* FOOTER*/
@@ -86,4 +134,50 @@ footer{
     border-radius: 20px;
     box-shadow: none;
     font-size: 1.2em;
+}
+
+
+/* Autres ecrans */
+
+@media screen and (max-width:900px){
+
+    /* Page accueil */
+    .img{
+        width: var(--medium);
+        height: var(--medium); 
+    }
+    .imgStudent{
+        background-image:url("../pictures/eleve_medium.png");
+    }
+
+    .imgProf{
+        background-image:url("../pictures/prof_medium.png");
+    }
+
+    /* Page etablissement */
+    button .nomEtablissement{
+        font-family: "Brush";
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width:550px){
+     /* Page accueil */
+    .img{
+        width: var(--small);
+        height: var(--small); 
+    }
+    .imgStudent{
+        background-image:url("../pictures/eleve_small.png");
+    }
+
+    .imgProf{
+        background-image:url("../pictures/prof_small.png");
+    }
+
+    /* Page etablissement */
+    button .nomEtablissement{
+        font-family: "Brush";
+        font-size: 1.4em;
+    }
 }

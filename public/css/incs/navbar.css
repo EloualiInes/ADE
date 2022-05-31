@@ -7,3 +7,19 @@
     margin-right: 20px;
 }
 
+.logoUsmb{
+    width: 347px;
+    height: 115px;
+    background-image: url("../../pictures/usmb_logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width:350px){
+    .logoUsmb{
+        width: 48px;
+        height: 48px;
+        background-image: url("../../pictures/usmb_logo_small.png");
+    }
+}

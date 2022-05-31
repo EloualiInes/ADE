@@ -1,6 +1,6 @@
 @extends('base')
 @section('titre')
-    Connexion
+    Établissement
 @endsection
 
 @section('content')
@@ -8,26 +8,21 @@
         <div class="containerRetour absolute">
             <a href="./..">	&#x2190 Changer de profil</a>
         </div>
-        <div class="container_content">
+        <div class="container_content flex center_column">
             <h1>Je sélectionne mon établissement : </h1>
-            <form action="./liste" method="post" class="formAuthentification">
+            <div class="soulignement"></div>
+            <form action="/liste" method="post" class="formAuthentification">
                 
-                <div class="div_chx_category flex space_around_row">
+                <div class="div_btns flex space_around_row">
                     @csrf
                     <button type="submit" class="btn_chx flex center_column_row">
-                        <img src="{{url('pictures/eleve.png')}}" alt="img eleve">
-                        <br>
-                        <small>Bourget</small>
+                        <small class="nomEtablissement">Bourget</small>
                     </button>
                     <button type="submit" class="btn_chx flex center_column_row">
-                        <img src="{{url('pictures/prof.png')}}" alt="img prof">
-                        <br>
-                        <small>Annecy</small>
+                        <small class="nomEtablissement">Annecy</small>
                     </button>
                     <button type="submit" class="btn_chx flex center_column_row">
-                        <img src="{{url('pictures/eleve.png')}}" alt="img eleve">
-                        <br>
-                        <small>Jacob</small>
+                        <small class="nomEtablissement">Jacob-Bellecombette</small>
                     </button>
                     
                     
