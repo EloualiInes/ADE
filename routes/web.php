@@ -19,8 +19,8 @@ Route::get('/', [MainController::class,"index"]);
 Route::post('/', [MainController::class,"index"]);
 Route::get("/etablissement", [MainController::class,'etablissement']);
 // Faire sûrement un controlleur emploiDuTemps(resource ? + bloqué certaines routes du coup)
-Route::post("/liste",[MainController::class,'liste']);
-Route::get("/liste",[MainController::class,'liste']);
+Route::post("/liste",[MainController::class,'listeFiliere']);
+Route::get("/liste",[MainController::class,'listeFiliere']);
 // Route::post('/liste', function() {
 //    return view('listeEmploiDuTemps',compact('listeFiliere'));
 // })->name('listeEmploiDuTemps');

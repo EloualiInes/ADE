@@ -127,16 +127,6 @@ footer{
 }
 
 
-#btn_validation{
-    background-color: #87CEFA;
-    color: white;
-    padding: 10px 20px 10px 20px;
-    border-radius: 20px;
-    box-shadow: none;
-    font-size: 1.2em;
-}
-
-
 /* Autres ecrans */
 
 @media screen and (max-width:900px){

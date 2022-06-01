@@ -7,7 +7,12 @@
 @section('content')
     <div class="content flex center_row_column">
         barre de recherche a que coucou
-        @dump($_POST);
+        {{-- @dump($_POST); --}}
+        
+        @php
+            if(isset($listeFiliere))
+                echo '<p>'.$listeFiliere.'</p>';
+        @endphp
         {{-- @php
             dump("oof");
             // dump($req);

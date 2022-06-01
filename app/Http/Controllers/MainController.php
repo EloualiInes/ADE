@@ -18,20 +18,27 @@ class MainController extends Controller
 
    
 
-    public function liste(){
+    public function listeFiliere(){
         if(request()->isMethod("POST")){
             if(isset($_POST["searchEmploi"])){
                 $listeFiliere = Classe::where("filiere",$_POST["searchEmploi"])->get();
+                // $listeFiliere = Classe::all();
                 if(isset($listeFiliere)){
-                    return view('listeEmploiDuTemps');
-                    // view('listeEmploiDuTemps', [
-                    //     "listeFiliere" => $listeFiliere
-                    // ]);
+                    // return view('listeEmploiDuTemps');
+                    return view('listeEmploiDuTemps', [
+                        "listeFiliere" => $listeFiliere
+                    ]);
+
                }
             }
-            return view('listeEmploiDuTemps');
+            $listeFiliere = Classe::all();
+            return view('listeEmploiDuTemps', [
+                "listeFiliere" => $listeFiliere
+            ]);
         }
-        return view('listeEmploiDuTemps');
+        return view('listeEmploiDuTemps', [
+            "listeFiliere" => "erreur"
+        ]);
     }
 
    
